@@ -1,0 +1,238 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #172b2d;
+    }
+
+    .transformations {
+      width: 100%;
+      padding: 60px 35px 70px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1180px;
+      margin: auto;
+    }
+
+    /* Heading */
+    .heading {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .heading h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 38px;
+      line-height: 1.2;
+      color: #183234;
+      margin-bottom: 12px;
+    }
+
+    .heading p {
+      max-width: 470px;
+      margin: auto;
+      font-size: 14px;
+      line-height: 1.55;
+      color: #718080;
+    }
+
+    /* Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 35px;
+    }
+
+    .card {
+      min-width: 0;
+    }
+
+    /* Before / After images */
+    .image-box {
+      width: 100%;
+      height: 258px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      overflow: hidden;
+      border-radius: 13px;
+      background: #eee;
+    }
+
+    .image-side {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .image-side img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .image-side:first-child {
+      border-right: 2px solid #fff;
+    }
+
+    .label {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 9px;
+      font-weight: bold;
+      letter-spacing: .7px;
+      color: white;
+      background: #46534e;
+    }
+
+    .label.after {
+      left: auto;
+      right: 12px;
+      background: #26743b;
+    }
+
+    /* Text */
+    .card-content {
+      padding-top: 18px;
+    }
+
+    .card-content h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+      line-height: 1.25;
+      color: #183234;
+      margin-bottom: 7px;
+    }
+
+    .card-content p {
+      max-width: 500px;
+      font-size: 13px;
+      line-height: 1.55;
+      color: #718080;
+    }
+
+    /* Floating icon */
+   
+   /* .floating-icon.one {
+      top: 157px;
+    }
+
+    .floating-icon.two {
+      top: 484px;
+    }
+
+    .floating-icon::after {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #e3003c;
+      top: -2px;
+      right: -1px;
+    }*/
+
+    /* Tablet */
+    @media (max-width: 900px) {
+      .transformations {
+        padding: 50px 25px 60px;
+      }
+
+      .heading h1 {
+        font-size: 34px;
+      }
+
+      .cards {
+        gap: 25px;
+      }
+
+      .image-box {
+        height: 230px;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 650px) {
+      .transformations {
+        padding: 40px 18px 50px;
+      }
+
+      .heading {
+        margin-bottom: 32px;
+      }
+
+      .heading h1 {
+        font-size: 29px;
+      }
+
+      .heading p {
+        font-size: 13px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+        gap: 38px;
+      }
+
+      .image-box {
+        height: 240px;
+      }
+
+      .card-content {
+        padding-top: 14px;
+      }
+
+      .card-content h2 {
+        font-size: 19px;
+      }
+
+      .card-content p {
+        font-size: 13px;
+      }
+
+      .floating-icon.one {
+        top: 150px;
+      }
+
+      .floating-icon.two {
+        top: auto;
+        bottom: 25px;
+      }
+    }
+
+    /* Small Mobile */
+    @media (max-width: 400px) {
+      .transformations {
+        padding-left: 14px;
+        padding-right: 14px;
+      }
+
+      .heading h1 {
+        font-size: 26px;
+      }
+
+      .image-box {
+        height: 205px;
+        border-radius: 10px;
+      }
+
+      .label {
+        top: 9px;
+        left: 9px;
+        padding: 4px 9px;
+        font-size: 8px;
+      }
+
+      .label.after {
+        right: 9px;
+      }
+    }
